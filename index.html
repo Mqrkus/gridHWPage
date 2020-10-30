@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Responsive Website</title>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="wrapper">
+    <div class="top">
+      <header class="party">
+        <h1>Halloween Party 2020</h1>
+        <p>Most amazing party place for Halloween!</p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">Starting from 100€</p>
+        <p>BASIC Package: snacks, beverages, photographer and costumes.</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">Starting from 300€</p>
+        <p>STANDARD Package: snacks, beverages, photographer and costumes.</p>
+      </div>
+      <div class="cta cta3">
+        <p class="price">Starting from 500€</p>
+        <p>PREMIUM Package: snacks, beverages, photographer, costumes and a DJ.</p>
+      </div>
+
+    </div>
+    <nav class="menu">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul id="menu-list">
+        <li>
+          <a href="">Snacks</a>
+        </li>
+        <li>
+          <a href="">Beverages</a>
+        </li>
+        <li>
+          <a href="">Costumes</a>
+        </li>
+        <li>
+          <a href="">Music</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">💊</span>
+        <h3>Snacks</h3>
+        <p>We have the best Halloween snacks!</p>
+      </div>
+      <div class="feature">
+        <span class="icon">⚗</span>
+        <h3>Drinks</h3>
+        <p>We have the biggest Halloween drink list!</p>
+      </div>
+      <div class="feature">
+        <span class="icon">💣</span>
+        <h3>Music</h3>
+        <p>We have best DJ's!</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="img/costumes.jpg" alt="Yummy Taco" class="about__mockup">
+      <div class="about__details">
+        <h2>Costume Advice</h2>
+        <p>From our professional Make-up Artist!</p>
+        <p>Our artist's will do everything to make you feel like Master Of Halloween!</p>
+        <button class="button button5">Learn More →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Pictures Of Our Parties</h2>
+      <img src="gallery/pexels-cottonbro-5427362.jpg" alt="">
+      <img src="gallery/pexels-cottonbro-5435182.jpg" alt="">
+      <img src="gallery/pexels-cottonbro-5435309.jpg" alt="">
+      <img src="gallery/pexels-elina-krima-3319333.jpg" alt="">
+      <img src="gallery/pexels-joy-marino-3050275.jpg" alt="">
+      <img src="gallery/pexels-karolina-grabowska-5422771.jpg" alt="">
+      <img src="gallery/pexels-nick-bondarev-4311150.jpg" alt="">
+      <img src="gallery/pexels-olia-danilevich-5490802.jpg" alt="">
+      <img src="gallery/pexels-paul-kerby-genil-3163994.jpg" alt="">
+      <img src="gallery/pexels-ryan-miguel-capili-3993247.jpg" alt="">
+      <img src="gallery/pexels-sergej-eckhardt-2083601.jpg" alt="">
+      <img src="gallery/pexels-toni-cuenca-619418.jpg" alt="">
+      <img src="gallery/pexels-sebastiaan-stam-1097456.jpg" alt="">
+      <img src="gallery/pexels-stephan-müller-1516202.jpg" alt="">
+      <img src="gallery/tydruk.jpg" alt="">
+    </section>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector('button[aria-expanded]');
+    function toggleMenu({target}) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      menuButton.setAttribute('aria-expanded', !expanded);
+      console.log("Toggle!");
+      
+    }
+
+    menuButton.addEventListener('click', toggleMenu)
+  </script>
+</div>
+</body>
+
+</html>
